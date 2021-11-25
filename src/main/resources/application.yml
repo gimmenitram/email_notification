@@ -1,0 +1,23 @@
+###############################################################################
+# Default configuration
+###############################################################################
+spring:
+  application:
+    name: water-notification
+
+server:
+  port: 1234
+
+spring.mail.host: smtp.gmail.com
+spring.mail.port: 587
+spring.mail.username:
+spring.mail.password:
+spring.mail.properties.mail: smtp
+spring.mail.properties.mail.smtp.auth: true
+spring.mail.properties.mail.smtp.starttls.enable: true
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.martin: DEBUG
+    org.springframework.security: INFO
